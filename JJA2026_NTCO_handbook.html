@@ -188,7 +188,8 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
 
 /* MANPOWER FIELD */
 .task-manpower{font-size:10px;color:var(--amber-text);background:var(--amber-bg);border-radius:3px;padding:2px 7px;margin-top:5px;display:inline-flex;align-items:center;gap:4px}
-.mp-blank{display:inline-block;min-width:40px;border-bottom:1px solid var(--amber-text);opacity:.5;vertical-align:bottom}
+.mp-input{font-size:10px;width:44px;border:none;border-bottom:1px solid var(--amber-text);background:transparent;color:var(--amber-text);text-align:center;outline:none;padding:0 2px;font-family:inherit}
+.mp-input::placeholder{color:var(--amber-text);opacity:.4}
 
 /* Highlight card accent */
 .accent-teal{border-color:var(--teal-mid)}
@@ -549,7 +550,7 @@ document.querySelectorAll('.task-row').forEach(row => {
   if (inner && !inner.querySelector('.task-manpower')) {
     const mp = document.createElement('p');
     mp.className = 'task-manpower';
-    mp.innerHTML = '需求工作人力：<span class="mp-blank"></span>&nbsp;人（待開會決議）';
+    mp.innerHTML = '需求工作人力：<input class="mp-input" type="number" min="0" placeholder="__">&nbsp;人（待開會決議）';
     inner.appendChild(mp);
   }
 });
