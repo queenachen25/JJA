@@ -186,11 +186,6 @@ section{margin-bottom:56px}
 }
 svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
 
-/* MANPOWER FIELD */
-.task-manpower{font-size:10px;color:var(--amber-text);background:var(--amber-bg);border-radius:3px;padding:2px 7px;margin-top:5px;display:inline-flex;align-items:center;gap:4px}
-.mp-input{font-size:10px;width:44px;border:none;border-bottom:1px solid var(--amber-text);background:transparent;color:var(--amber-text);text-align:center;outline:none;padding:0 2px;font-family:inherit}
-.mp-input::placeholder{color:var(--amber-text);opacity:.4}
-
 /* Highlight card accent */
 .accent-teal{border-color:var(--teal-mid)}
 .accent-green{border-color:var(--green-mid)}
@@ -345,79 +340,78 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
   <!-- SECTION 2: LINE 群組 -->
   <section id="line-groups">
     <p class="section-eyebrow">第二章</p>
-    <h2 class="section-title">LINE 群組建議架構</h2>
+    <h2 class="section-title">LINE 群組建議架構（共 5 個）</h2>
     <p class="section-desc">
-      建群時機：決標簽約後立刻建「核心決策群」。技術群與接待群在前置作業展開（活動前 6–8 週）再建，
-      避免群組沉寂、降低重要通知的存在感。群名建議加上活動縮寫，例如「JJA2026 | 核心決策」。
+      群名建議加上活動縮寫，例如「JJA2026 | 總指揮」。①總指揮群決標後立刻建立；②③④各功能群在活動前 6–8 週展開前置作業時建立；⑤TMEX 專組在 TMEX 籌備啟動時建立。
     </p>
 
     <div class="group-card">
-      <div class="group-icon" style="background:var(--info-bg);color:var(--info-text)">行</div>
+      <div class="group-icon" style="background:var(--info-bg);color:var(--info-text);font-size:11px;font-weight:700">①</div>
       <div style="flex:1;min-width:0">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
-          <span class="group-name">行政群</span>
-          <span class="group-tag" style="background:var(--info-bg);color:var(--info-text)">4 人</span>
+          <span class="group-name">JJA 總指揮</span>
+          <span class="group-tag" style="background:var(--info-bg);color:var(--info-text)">決策核心</span>
         </div>
-        <p class="group-members">黃小姐（北流）＋ Queena ＋ 五条文化夥伴 Nicole、朋朋</p>
-        <p class="group-desc">工作計畫書審核確認、重大調整決策、週進度報告推進、合約與報告文件往來。所有正式確認只走此群，不取代書面存證。</p>
+        <p class="group-members">五条文化（Queena ＋ Nicole ＋ 小鳥人）＋ 北流（黃小姐）</p>
+        <p class="group-desc">重大決策、審核回報、緊急應變。所有需要北流核定的事項只走此群，不取代書面存證。</p>
       </div>
     </div>
 
     <div class="group-card">
-      <div class="group-icon" style="background:var(--success-bg);color:var(--success-text)">技</div>
+      <div class="group-icon" style="background:var(--success-bg);color:var(--success-text);font-size:11px;font-weight:700">②</div>
       <div style="flex:1;min-width:0">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
-          <span class="group-name">舞台技術群</span>
-          <span class="group-tag" style="background:var(--success-bg);color:var(--success-text)">7 個群（各舞台獨立）</span>
+          <span class="group-name">技術 × 舞台組</span>
+          <span class="group-tag" style="background:var(--success-bg);color:var(--success-text)">7 個小群・依場館建立</span>
         </div>
-        <p class="group-members">統籌：信宏 ／ 北流場館窗口 ＋ 各舞台舞監 ＋ 燈光音響窗口（人數依舞台大小而定）</p>
-        <p class="group-desc">7 舞台硬體規劃確認、進撤場時間協調、設備清單核定、EFP 系統與彩排排程。七個舞台各建一個群，各群獨立運作。</p>
+        <p class="group-members">技術統籌小鳥人 ＋ 各場館舞監信宏等 ＋ 各技術執行人員 ＋ 七個場館北流窗口 ＋ 五条文化</p>
+        <p class="group-desc">每個場館獨立建群。進撤場協調、設備問題即時處理、舞台流程協調。各場館問題在場館小群升報統籌，再由統籌決定是否推進①群。</p>
       </div>
     </div>
 
     <div class="group-card">
-      <div class="group-icon" style="background:var(--warn-bg);color:var(--warn-text)">藝</div>
+      <div class="group-icon" style="background:var(--warn-bg);color:var(--warn-text);font-size:11px;font-weight:700">③</div>
       <div style="flex:1;min-width:0">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
-          <span class="group-name">藝人演出接待群</span>
-          <span class="group-tag" style="background:var(--warn-bg);color:var(--warn-text)">6–8 人</span>
+          <span class="group-name">藝人接待組</span>
+          <span class="group-tag" style="background:var(--warn-bg);color:var(--warn-text)">藝人動向</span>
         </div>
-        <p class="group-members">藝人接待組 ＋ 北流窗口 ＋ 五条文化</p>
-        <p class="group-desc">機票住宿安排進度、工作許可申請追蹤、演出行程確認、接機接送司機協調。</p>
+        <p class="group-members">北流 ＋ 後台經理（阿飽）＋ 翻譯接待（笨道策展）＋ 五条文化（負責藝人相關行政作業）</p>
+        <p class="group-desc">藝人動向即時回報、接送時間協調、突發需求應對、藝人行政作業追蹤。海外藝人到台前後全程追蹤。</p>
       </div>
     </div>
 
     <div class="group-card">
-      <div class="group-icon" style="background:var(--gray-bg);color:var(--gray-text)">運</div>
+      <div class="group-icon" style="background:var(--danger-bg);color:var(--danger-text);font-size:11px;font-weight:700">④</div>
       <div style="flex:1;min-width:0">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
-          <span class="group-name">活動現場全員群</span>
-          <span class="group-tag" style="background:var(--gray-bg);color:var(--gray-text)">全員</span>
+          <span class="group-name">維安 × 交通 × 醫護</span>
+          <span class="group-tag" style="background:var(--danger-bg);color:var(--danger-text)">24hr 待命</span>
         </div>
-        <p class="group-members">所有工作人員（舞監、工讀、各組組長、藝術接待）</p>
-        <p class="group-desc">活動日廣播通知、動線臨時調整、各場域即時狀況回報、緊急人力補位。限廣播用途，禁止閒聊，避免重要通知被淹沒。</p>
+        <p class="group-members">北流 ＋ 五条文化 ＋ 警察局窗口 ＋ 義交窗口 ＋ 醫護窗口</p>
+        <p class="group-desc">緊急疏散、災害應變（颱風/豪雨/地震），24hr 待命，活動期間不得靜音。每日收工前確認次日天候及待命狀態。</p>
       </div>
     </div>
 
     <div class="group-card">
-      <div class="group-icon" style="background:var(--danger-bg);color:var(--danger-text)">急</div>
+      <div class="group-icon" style="background:#EDE9FE;color:#5B21B6;font-size:11px;font-weight:700">⑤</div>
       <div style="flex:1;min-width:0">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px">
-          <span class="group-name">緊急應變指揮群</span>
-          <span class="group-tag" style="background:var(--danger-bg);color:var(--danger-text)">5–7 人</span>
+          <span class="group-name">TMEX 論壇專組</span>
+          <span class="group-tag" style="background:#EDE9FE;color:#5B21B6">8/27–28</span>
         </div>
-        <p class="group-members">北流場館窗口 ＋ Queena ＋ 維安負責人 ＋ 醫護負責人</p>
-        <p class="group-desc">颱風取消決策、觀眾事故應處、設備失效應變、停電緊急指揮。務必加入北流具決策授權的主管，確保緊急狀況下指揮鏈完整。</p>
+        <p class="group-members">五条文化 ＋ 北流 ＋ Legacy TERA／SUB／Live House D 技術執行</p>
+        <p class="group-desc">8/27–28 國際論壇（≥6場）、產業媒合會（≥2場）、Welcome Party（≥1場）現場協調。TMEX 系列活動結束後此群封存。</p>
       </div>
     </div>
 
     <div class="card" style="margin-top:4px">
       <p class="card-title">群組使用原則</p>
-      <div class="principle-row">01 · 正式審核確認只走「核心決策群」，其他群不作決策，不取代書面存證</div>
-      <div class="principle-row">02 · 各群發言標明組別與姓名，例如「[技術統籌] 陳XX：貨車進場時間更新為 08:00」</div>
-      <div class="principle-row">03 · 「全員群」限廣播用途，禁止連環訊息與閒聊，避免重要通知被淹沒</div>
-      <div class="principle-row">04 · 「應變群」務必加入北流具決策授權的主管，確保緊急狀況下指揮鏈完整</div>
-      <div class="principle-row">05 · 技術群或接待群 4 小時內無法取得北流確認，由 Queena 直接推進行政群向黃小姐確認</div>
+      <div class="principle-row">01 · 重大決策、北流核定事項只走「①JJA 總指揮」，其他群不作最終決策，不取代書面存證</div>
+      <div class="principle-row">02 · 各群發言標明組別與姓名，例如「[②技術-表演廳] 信宏：貨車進場時間更新為 08:00」</div>
+      <div class="principle-row">03 · 「④維安群」必須加入北流具決策授權主管，活動期間 24hr 待命不得靜音</div>
+      <div class="principle-row">04 · 各功能群 4 小時內無法解決問題，由 Queena 升報「①JJA 總指揮」向黃小姐確認</div>
+      <div class="principle-row">05 · 「⑤TMEX 專組」於 8/28 晚 Welcome Party 結束後封存，不再發送訊息</div>
     </div>
   </section>
 
@@ -546,16 +540,5 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
   </div>
 
 </main>
-<script>
-document.querySelectorAll('.task-row').forEach(row => {
-  const inner = row.querySelector('div');
-  if (inner && !inner.querySelector('.task-manpower')) {
-    const mp = document.createElement('p');
-    mp.className = 'task-manpower';
-    mp.innerHTML = '需求工作人力：<input class="mp-input" type="number" min="0" placeholder="__">&nbsp;人（待開會決議）';
-    inner.appendChild(mp);
-  }
-});
-</script>
 </body>
 </html>
