@@ -230,65 +230,107 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
     </p>
 
     <div class="svg-wrap">
-      <svg width="100%" viewBox="0 0 820 250" role="img">
-        <title>甲乙方對接架構圖</title>
-        <desc>臺北流行音樂中心與五条文化股份有限公司的雙向對接關係及執行架構</desc>
+      <svg width="100%" viewBox="0 0 980 295" role="img">
+        <title>北流×五条文化對接架構圖</title>
         <defs>
           <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
             <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </marker>
+          <marker id="oarr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#E8920A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
         </defs>
 
-        <!-- 北流 -->
-        <rect x="40" y="20" width="240" height="58" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
-        <text x="160" y="42" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">臺北流行音樂中心</text>
-        <text x="160" y="62" text-anchor="middle" font-size="12" fill="#0F6E56">甲方 · 主辦單位</text>
+        <!-- ══ ROW 1: 主體框 ══ -->
+        <!-- 北流 center=155, w=220 -->
+        <rect x="45" y="12" width="220" height="54" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+        <text x="155" y="33" text-anchor="middle" font-size="14" font-weight="500" fill="#085041">臺北流行音樂中心</text>
+        <text x="155" y="53" text-anchor="middle" font-size="11" fill="#0F6E56">甲方 · 主辦單位</text>
 
-        <rect x="540" y="20" width="240" height="58" rx="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.8"/>
-        <text x="660" y="42" text-anchor="middle" font-size="14" font-weight="500" fill="#27500A">五条文化股份有限公司</text>
-        <text x="660" y="62" text-anchor="middle" font-size="12" fill="#3B6D11">五条文化 · 執行統籌</text>
+        <!-- 五条 center=810, w=218 -->
+        <rect x="701" y="12" width="218" height="54" rx="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.8"/>
+        <text x="810" y="33" text-anchor="middle" font-size="14" font-weight="500" fill="#27500A">五条文化股份有限公司</text>
+        <text x="810" y="53" text-anchor="middle" font-size="11" fill="#3B6D11">乙方 · 執行統籌</text>
 
-        <!-- double arrow -->
-        <line x1="282" y1="49" x2="538" y2="49" stroke="#888" stroke-width="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+        <!-- 主體雙向箭頭 -->
+        <line x1="267" y1="39" x2="699" y2="39" stroke="#888" stroke-width="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
-        <!-- 垂直線 -->
-        <line x1="160" y1="78" x2="160" y2="100" stroke="#ccc" stroke-width="0.5"/>
-        <line x1="660" y1="78" x2="660" y2="100" stroke="#ccc" stroke-width="0.5"/>
+        <!-- ══ 北流垂直線 → 3部門 ══ -->
+        <line x1="155" y1="66" x2="155" y2="94" stroke="#ccc" stroke-width="0.5"/>
+        <!-- centers: 敏媜=75, 場館=232, 行銷=400 -->
+        <line x1="75"  y1="94" x2="400" y2="94" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="75"  y1="94" x2="75"  y2="106" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="232" y1="94" x2="232" y2="106" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="400" y1="94" x2="400" y2="106" stroke="#ccc" stroke-width="0.5"/>
 
-        <!-- 敏媜 -->
-        <rect x="66" y="100" width="188" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
-        <text x="160" y="120" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">敏媜 · 內容研發部</text>
-        <text x="160" y="138" text-anchor="middle" font-size="11" fill="#0F6E56">北流行政唯一窗口</text>
+        <!-- ══ 五条垂直線 → Queena ══ -->
+        <line x1="810" y1="66" x2="810" y2="106" stroke="#ccc" stroke-width="0.5"/>
 
-        <!-- Queena -->
-        <rect x="566" y="100" width="188" height="56" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.6"/>
-        <text x="660" y="120" text-anchor="middle" font-size="13" font-weight="500" fill="#27500A">Queena · 總統籌</text>
-        <text x="660" y="138" text-anchor="middle" font-size="11" fill="#3B6D11">五条文化對外唯一窗口</text>
+        <!-- ══ ROW 2: 部門框 ══ -->
+        <!-- 敏媜 center=75, w=128 -->
+        <rect x="11"  y="106" width="128" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
+        <text x="75"  y="125" text-anchor="middle" font-size="11" font-weight="500" fill="#085041">敏媜 · 內容研發部</text>
+        <text x="75"  y="143" text-anchor="middle" font-size="10" fill="#0F6E56">北流行政唯一窗口</text>
 
-        <!-- double arrow 2 -->
-        <line x1="256" y1="128" x2="564" y2="128" stroke="#888" stroke-width="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
+        <!-- 場館服務部 center=232, w=110 -->
+        <rect x="177" y="106" width="110" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
+        <text x="232" y="125" text-anchor="middle" font-size="11" font-weight="500" fill="#085041">場館服務部</text>
+        <text x="232" y="143" text-anchor="middle" font-size="10" fill="#0F6E56">現場執行團隊</text>
 
-        <!-- 北流說明 -->
-        <text x="160" y="174" text-anchor="middle" font-size="11" fill="#9C9A92">審核 · 核定 · 驗收</text>
-        <text x="160" y="190" text-anchor="middle" font-size="11" fill="#9C9A92">各工項最終確認權</text>
+        <!-- 行銷推廣部 center=400, w=148 -->
+        <rect x="326" y="106" width="148" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
+        <text x="400" y="122" text-anchor="middle" font-size="11" font-weight="500" fill="#085041">行銷推廣部</text>
+        <text x="400" y="138" text-anchor="middle" font-size="10" fill="#0F6E56">藝人媒體宣傳 · 市集</text>
+        <text x="400" y="154" text-anchor="middle" font-size="10" fill="#0F6E56">公開項目負責</text>
 
-        <line x1="660" y1="156" x2="660" y2="174" stroke="#ccc" stroke-width="0.5"/>
-        <line x1="572" y1="174" x2="748" y2="174" stroke="#ccc" stroke-width="0.5"/>
-        <line x1="572" y1="174" x2="572" y2="186" stroke="#ccc" stroke-width="0.5"/>
-        <line x1="660" y1="174" x2="660" y2="186" stroke="#ccc" stroke-width="0.5"/>
-        <line x1="748" y1="174" x2="748" y2="186" stroke="#ccc" stroke-width="0.5"/>
+        <!-- Queena center=810, w=200 -->
+        <rect x="710" y="106" width="200" height="60" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.6"/>
+        <text x="810" y="126" text-anchor="middle" font-size="12" font-weight="500" fill="#27500A">Queena · 總統籌</text>
+        <text x="810" y="146" text-anchor="middle" font-size="10" fill="#3B6D11">五条文化對外唯一窗口</text>
 
-        <rect x="530" y="186" width="84" height="38" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
-        <text x="572" y="202" text-anchor="middle" font-size="11" fill="#27500A">技術統籌</text>
-        <text x="572" y="216" text-anchor="middle" font-size="11" font-weight="500" fill="#27500A">小鳥人</text>
+        <!-- ══ Queena → 4子節點 ══ -->
+        <line x1="810" y1="166" x2="810" y2="190" stroke="#ccc" stroke-width="0.5"/>
+        <!-- centers: 640, 730, 820, 920 -->
+        <line x1="640" y1="190" x2="920" y2="190" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="640" y1="190" x2="640" y2="200" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="730" y1="190" x2="730" y2="200" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="820" y1="190" x2="820" y2="200" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="920" y1="190" x2="920" y2="200" stroke="#ccc" stroke-width="0.5"/>
 
-        <rect x="618" y="186" width="84" height="38" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
-        <text x="660" y="209" text-anchor="middle" font-size="12" fill="#27500A">專案人員</text>
-        <text x="572" y="216" text-anchor="middle" font-size="11" font-weight="500" fill="#27500A">Nicole</text>
+        <!-- ══ ROW 3: 子節點框 ══ -->
+        <!-- 小鳥人 center=640, w=76 -->
+        <rect x="602" y="200" width="76" height="54" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+        <text x="640" y="220" text-anchor="middle" font-size="10.5" fill="#27500A">技術統籌</text>
+        <text x="640" y="238" text-anchor="middle" font-size="10.5" font-weight="500" fill="#27500A">小鳥人</text>
 
-        <rect x="706" y="186" width="84" height="38" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
-        <text x="748" y="209" text-anchor="middle" font-size="12" fill="#27500A">藝人接待</text>
-        <text x="572" y="216" text-anchor="middle" font-size="11" font-weight="500" fill="#27500A">阿飽、笨道策展</text>
+        <!-- Nicole center=730, w=76 -->
+        <rect x="692" y="200" width="76" height="54" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+        <text x="730" y="220" text-anchor="middle" font-size="10.5" fill="#27500A">專案人員</text>
+        <text x="730" y="238" text-anchor="middle" font-size="10.5" font-weight="500" fill="#27500A">Nicole</text>
+
+        <!-- 藝人接待 center=820, w=82 -->
+        <rect x="779" y="200" width="82" height="54" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+        <text x="820" y="218" text-anchor="middle" font-size="10.5" fill="#27500A">藝人接待</text>
+        <text x="820" y="233" text-anchor="middle" font-size="9.5" font-weight="500" fill="#27500A">阿飽</text>
+        <text x="820" y="247" text-anchor="middle" font-size="9" fill="#27500A">笨道策展</text>
+
+        <!-- 現場工讀 center=920, w=82 -->
+        <rect x="879" y="200" width="82" height="54" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+        <text x="920" y="218" text-anchor="middle" font-size="10.5" fill="#27500A">現場工讀</text>
+        <text x="920" y="234" text-anchor="middle" font-size="9.5" fill="#27500A">人力派遣</text>
+        <text x="920" y="249" text-anchor="middle" font-size="9" fill="#27500A">公司</text>
+
+        <!-- ══ 橘色虛線 ══ -->
+        <!-- 行銷推廣部(center=400, bottom=166) → 藝人接待(center=820, top=200): L形 at y=270 -->
+        <line x1="400" y1="166" x2="400" y2="270" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="400" y1="270" x2="820" y2="270" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="820" y1="270" x2="820" y2="254" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#oarr)"/>
+
+        <!-- 場館服務部(center=232, bottom=166) → 現場工讀(center=920, top=200): L形 at y=281 -->
+        <line x1="232" y1="166" x2="232" y2="281" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="232" y1="281" x2="920" y2="281" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="920" y1="281" x2="920" y2="254" stroke="#E8920A" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#oarr)"/>
+
       </svg>
     </div>
 
@@ -312,27 +354,6 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
       </div>
     </div>
 
-    <!-- 付款期程 -->
-    <div class="card" style="margin-top:10px">
-      <p class="card-title">付款期程（三期）</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
-        <div>
-          <p style="font-size:11px;font-weight:500;color:var(--blue-text);margin-bottom:4px">第一期 30%</p>
-          <p style="font-size:11px;color:var(--text-2)">決標後 20 個工作日內</p>
-          <p style="font-size:11px;color:var(--text-3)">繳交工作計畫書（含舞台流程初步規劃、硬體初步規劃、人力架構表）</p>
-        </div>
-        <div>
-          <p style="font-size:11px;font-weight:500;color:var(--blue-text);margin-bottom:4px">第二期 40%</p>
-          <p style="font-size:11px;color:var(--text-2)">115 年 6 月 30 日前</p>
-          <p style="font-size:11px;color:var(--text-3)">繳交期中報告書（含硬體執行方案、演出接洽進度、交維計畫、保險證明）</p>
-        </div>
-        <div>
-          <p style="font-size:11px;font-weight:500;color:var(--blue-text);margin-bottom:4px">尾款 30%</p>
-          <p style="font-size:11px;color:var(--text-2)">115 年 10 月 30 日前</p>
-          <p style="font-size:11px;color:var(--text-3)">繳交成果報告書（含全案執行成果、問卷分析、動態影像全紀錄、代辦費用單據）</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <div class="divider"></div>
@@ -486,19 +507,25 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
       <div class="task-row"><span class="badge b-both">共通</span><div><p class="task-text">演出後安排藝人前往媒體採訪區（如有安排）</p><p class="task-note">媒體動線由場域組規劃，接待組負責引導藝人至採訪背板區</p></div></div>
     </div>
 
-    <div class="card">
-      <p class="card-title">3-B 主持人管理（共 2 名）</p>
-      <div class="task-row"><span class="badge b-both">共通</span><div><p class="task-text">文化館前廣場舞台主持人（1 名，具中英文口說能力）</p><p class="task-note">腳本與串場台詞需提前與北流確認</p></div></div>
-      <div class="task-row"><span class="badge b-both">共通</span><div><p class="task-text">市民大道封街舞台主持人（1 名，具中英文口說能力）</p><p class="task-note">需配合中心邀約之演出名單，進行整體流程之掌控</p></div></div>
-    </div>
-
-    <!-- 對照表 -->
     <p style="font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--text-3);margin:16px 0 8px">四、國際 vs 國內分工關鍵差異</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+      <div class="card" style="border-color:var(--teal-mid)">
+        <p class="card-title" style="color:var(--teal-text)">北流負責項目</p>
+        <div class="task-row"><div><p class="task-text">合約簽定及資訊同步</p><p class="task-note">除費用等資訊外，請同步給藝人組所有細項，包含行銷宣傳等條例</p></div></div>
+        <div class="task-row"><div><p class="task-text">行銷宣傳素材細項列表</p><p class="task-note">由北流提供，藝人組向藝人確認素材授權及交付時程</p></div></div>
+      </div>
+      <div class="card" style="border-color:var(--green-mid)">
+        <p class="card-title" style="color:var(--green-text)">五条負責項目</p>
+        <div class="task-row"><div><p class="task-text">確認演出時間、排序、彩排時段</p><p class="task-note">每組至少 30 分鐘演出，彩排時間須與舞監群協調排程</p></div></div>
+        <div class="task-row"><div><p class="task-text">確認演出曲目及著作權授權狀態</p><p class="task-note">涉及重製、公開演出、公開播送、公開傳輸等授權，須取得後才可演出</p></div></div>
+      </div>
+    </div>
 
     <div class="two-col">
       <div class="card" style="border-color:var(--blue-mid)">
-        <p class="card-title" style="color:var(--blue-text)">海外藝人 — 笨道策展負責</p>
-        <div class="task-row"><div><p class="task-text">工作許可申請（勞動部）</p><p class="task-note">最長前置時間，務必最優先啟動</p></div></div>
+        <p class="card-title" style="color:var(--blue-text)">海外藝人 — 笨道策展及五条共同負責</p>
+        <div class="task-row"><div><p class="task-text">申請在台工作許可（最晚活動前 4 週送件）</p><p class="task-note">勞動部工作許可，即刻開始進行；須備演出合約、護照影本、演出計畫書等，逾期無法補辦</p></div></div>
         <div class="task-row"><div><p class="task-text">國際機票訂購與管理</p><p class="task-note">含早鳥、行程調整、緊急改票費用機制</p></div></div>
         <div class="task-row"><div><p class="task-text">台灣落地交通全程安排</p><p class="task-note">司機名單、車隊調度、機場接送時程表</p></div></div>
         <div class="task-row"><div><p class="task-text">4 星飯店住宿（南港/松山區）</p><p class="task-note">含入退房、行李寄存、緊急聯絡窗口</p></div></div>
@@ -522,7 +549,7 @@ svg text{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif
     <p style="font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--text-3);margin:16px 0 8px">五、最容易出包的雷區</p>
     <div class="warn-panel">
       <p class="card-title">高風險疏漏清單</p>
-      <div class="task-row"><span class="badge b-danger">必辦</span><div><p class="task-text">工作許可申請時間太晚啟動 — 決標後第一週就要收資料</p></div></div>
+      <div class="task-row"><span class="badge b-danger">必辦</span><div><p class="task-text">工作許可申請 — 即刻開始進行，資料收集不等人</p></div></div>
       <div class="task-row"><span class="badge b-warn">注意</span><div><p class="task-text">Rider 收到後沒轉交技術組 — 造成設備備料不足，彩排才發現</p></div></div>
       <div class="task-row"><span class="badge b-warn">注意</span><div><p class="task-text">多組海外藝人同天抵台、司機調度不足 — 需提前建車隊排班表</p></div></div>
       <div class="task-row"><span class="badge b-warn">注意</span><div><p class="task-text">宣傳素材取得但忘記確認著作權授權範圍 — 對外宣傳前必須確認</p></div></div>
